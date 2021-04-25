@@ -14,7 +14,7 @@
     <nav>
       <div class="navigationLeft">
         <aside class="logo">
-          <div class="logo">
+          <div class="logoDiv">
             <img class="logoArch" src="image\Arch.svg">
             <img class="logoMove" src="image\move.svg">
           </div>
@@ -169,14 +169,18 @@
     <section class="section5">
       <div class="contentSection5Left">
         <img src="image\house.jpg" alt="Дом">
-        <img src="image\bigCloud.png" alt="Большое облако">
-        <img src="image\smallCloud.png" alt="Маленькое облако">
+        <div class="bigCloud">
+          <img src="image\bigCloud.png" alt="Большое облако">
+        </div>
+        <div class="smallCloud">
+          <img src="image\smallCloud.png" alt="Маленькое облако">
+        </div>
       </div>
       <div class="contentSection5Right">
         <h2>Realize your dream
           <br /> project with <span class="wordArchmove">Archmove</span>
         </h2>
-        <form class="buttonSection5">
+        <form class="formButtonSection5">
           <button class="buttonSection5">Free Consultation</button>
         </form>
       </div>      
@@ -184,30 +188,35 @@
 
     <!-- Наши партнеры -->
     <aside class="ourPartners">
-      <h2 class="ourPartners">Our Partners</h2>
-      <article class="ourPartners">
-        <img src="image\logoAIA.png" alt="The American Institute of Architects">
-        <img src="image\logoCFMA.png" alt="CF Moller Architects">
-        <img src="image\logoASLA.png" alt="American Society of Landscape Architects">
-        <img src="image\logoSTIR.png" alt="STIR">
-        <img src="image\logoMA.png" alt="Marcetong Architects">
+      <h2>Our Partners</h2>
+      <article class="ourPartnersContent">
+        <img class="logoAIA" src="image\logoAIA.png" alt="The American Institute of Architects">
+        <img class="logoCFMA" src="image\logoCFMA.png" alt="CF Moller Architects">
+        <img class="logoASLA" src="image\logoASLA.png" alt="American Society of Landscape Architects">
+        <img class="logoSTIR" src="image\logoSTIR.png" alt="STIR">
+        <img class="logoMA" src="image\logoMA.png" alt="Marcetong Architects">
       </article>      
     </aside>    
     
     <!-- Подвал -->
     <footer class="footer">
-      <aside class="menu">
-        <a href="" class="AboutUs">About Us</a>
-        <a href="" class="HowItWorks">How it Works</a>
-        <a href="" class="FAQ">FAQ</a>
-        <a href="" class="ContactUs">Contact Us</a>
-        <a href="" class="PrivacyPolicy">Privacy Policy</a>
-      </aside>
+      <hr class="hr-line">
+      <div class="footerBorder">
+        <aside class="footerMenu">
+          <a href="" class="AboutUs">About Us</a>
+          <a href="" class="HowItWorks">How it Works</a>
+          <a href="" class="FAQ">FAQ</a>
+          <a href="" class="ContactUs">Contact Us</a>
+          <a href="" class="PrivacyPolicy">Privacy Policy</a>
+        </aside>
 
-      <aside class="logo">
-        <p class="logoArch">Arch</p>
-        <p class="logoMove">move</p>
-      </aside>
+        <aside class="footerLogo">
+          <div class="footerLogoDiv">
+            <img class="logoArch" src="image\Arch.svg">
+            <img class="logoMove" src="image\move.svg">
+          </div>
+        </aside>
+      </div>
     </footer>
   </body>
 </html>

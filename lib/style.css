@@ -39,7 +39,7 @@ nav {
 .navigationLeft {
   justify-content: flex-start;
   align-items: center;
-  width: 60%;
+  width: 70%;
   max-height: 48px;
   height: 100%;
   /* background-color: dodgerblue; */
@@ -48,7 +48,7 @@ nav {
 .navigationRight {
   justify-content: flex-end;
   align-items: center;
-  width: 40%;
+  width: 30%;
   max-height: 48px;
   height: 100%;
   /* background-color: greenyellow; */
@@ -57,18 +57,16 @@ aside.logo {
   align-items: center;
   justify-content: center;
   max-height: 48px;
-  max-width: 150px;
-  width: 20%;
-  /*left: 0px;
-  top: 34px;*/
+  max-width: 64px;
+  min-width: 64px;
+  margin: 0 0 0 20px;
   border-radius: 0px; 
   /* background-color: bisque;  */
 }
 div.logoDiv {
   /*justify-content: space-between;*/
   flex-direction: column;
-  max-width: 64px;
-  width: 100%;
+  width: 64px;
   /* background-color: brown; */
 }
 .logoArch {
@@ -82,19 +80,31 @@ div.logoDiv {
   max-width: 50.86px;
   /* background-color: darkgrey; */
 }
-
+.menu ul {
+  display: flex;
+}
+.menu li{
+  list-style: none;
+  margin: 0 10%;
+  /* background-color: plum; */
+}
 aside.menu {
+  justify-content: space-between;
   min-height: 48px;
-  max-width: 507px;
+  max-width: 1507px;
   width: 80%;
   margin: 0px;
   align-items: center;
   justify-content: start;
   /* background-color: blue; */
 }
-
+input[type="checkbox"] {
+  display: none;
+}
+.menu label {
+  display: none;
+}
 .menuHowItWorks, .menuArticles, .menuListOfArchitect, .menuDesignGallery {
-  margin: 3%;
   line-height: 40px;
   letter-spacing: 0.01em;
   text-align: center;
@@ -102,11 +112,6 @@ aside.menu {
   /* background-color: darkslategray; */
   text-decoration: none;
   white-space: nowrap;
-
-}
-    
-.menuHowItWorks {
-  margin-left: 0%;
 }
 
 .searhc, .signIn, .signUp {
@@ -903,6 +908,82 @@ font-weight: 700;
   nav {
     max-width: 1250px;
   }
+
+/* Верхнее меню сворачивается в кнопку, логотип сдвигается вправо */
+  .navigationLeft {
+    flex-direction: row-reverse;
+    width: 50%;
+    justify-content: flex-end;
+  }
+  .navigationRight {
+    width: 50%;
+  }
+  .navigationMenu {
+    display: none;
+    flex-direction: column;
+    margin: 0% 0 0 0;
+    /* background-color: aqua; */
+  }
+  .menu ul {
+    display: none;
+  }
+  
+  aside.menu {
+    max-width: 86px;
+    width: 20%;
+  }
+  aside.logo {
+    justify-content: end;
+    width: 80%;
+  }
+  
+  .menu label{
+    display: flex;
+    max-height: 48px;
+    max-width: 86px;
+    height: 100%;
+    width: 100%;
+    /* margin: 0% 5% 0 0; */
+    /* z-index: 53; */
+    border-radius: 4px;
+    padding: 4px 24px;
+    color: rgb(255, 255, 255);
+    background-color: pink;
+    border: 0px;
+    font-family: SF UI Display;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  .menu {
+    /* flex-direction:column; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    z-index: 44;
+    /* background-color: cornflowerblue; */
+  }
+
+  .menu li{
+    display: flex;
+    margin: 20% 0 0 -70%;
+    /* vertical-align: top; */
+    background-color: pink;
+  }
+  input[type="checkbox"]:checked ~ label + ul {
+    display: flex;
+    margin: 280px 0 0 0;
+    /* max-height: 100%; */
+    /* background-color: pink; */
+  }
+  .menuHowItWorks, .menuArticles, .menuListOfArchitect, .menuDesignGallery {
+    margin: 0 0 0 5%;
+  }
+/* Закончили игры с верхним меню */
+
+
   .section1 {
     max-width: 1250px;
   }
@@ -1028,12 +1109,27 @@ font-weight: 700;
 
 
 @media (max-width: 768px) {
-  aside.menu {
-    display: none;
-  }
-  .section1 img {
-    display: none;
-  }
+    .section1 img {
+      display: none;
+    }
+    .contentSection1Left {
+      max-width: 740px;
+    }
+    p.contentSection1 {
+      max-width: 740px;
+    }
+    .base h1{
+      font-size: 78px;
+      line-height: 78px;
+
+    }
+    .base h2 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+
+
 }
 
 

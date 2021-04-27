@@ -5,7 +5,6 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="lib/style.css" type="text/css">
     <title>Archmove</title>
-    <script src="lib/script.js"></script>
   </head>
 
   <body>
@@ -59,7 +58,7 @@
         <article class="contentSection1">
           <div class="contentSection1Left">
             <p class="contentSection1">The first and most trusted marketplace of design & build house in The World. 100% guaranteed Build safe, comfortable and transparent with a project management for the best result</p>
-            <form class="buttonSection1">
+            <form class="buttonSection1" >
               <button class="buttonSection1">Free Consultation</button>
             </form>
           </div>
@@ -77,13 +76,35 @@
           <h2 class="headerSection2">Build professional
             <br />valuable room for you
           </h2>
-          <form class="buttonSection2">
-            <button class="buttonSection2Left"> <img src="icons\buttonSection2Left.svg" alt="Налево"></button> 
-            <button class="buttonSection2Right"> <img src="icons\buttonSection2Right.svg" alt="Направо"></button> 
+          <form class="buttonSection2" onsubmit="return false">
+            <button class="buttonSection2Left" id="previous"> <img src="icons\buttonSection2Left.svg" alt="Налево"></button> 
+            <button class="buttonSection2Right" id="next"> <img src="icons\buttonSection2Right.svg" alt="Направо"></button> 
           </form>
         </div>
         <article class="contentSection2">
-          карусель при нажатии на кнопку менять марджин и длину документа?
+              <ul class="carouselConteiner">
+                <li class="carouselElement"><img src="image\kitchen_in_front.jpg" alt="0">
+                </li>
+                <li class="carouselElement"><img src="image\kitchen_on_the_side.jpg" alt="1">
+                </li>
+                <li class="carouselElement"><img src="image\bedroom.jpg" alt="2">
+                </li>
+                <li class="carouselElement"><img src="image\bedside_table.jpg" alt="3">
+                </li>
+                <li class="carouselElement"><img src="image\kitchen_in_front.jpg" alt="4">
+                </li>
+                <li class="carouselElement"><img src="image\kitchen_on_the_side.jpg" alt="5">
+                </li>
+                <li class="carouselElement"><img src="image\bedroom.jpg" alt="6">
+                </li>
+                <li class="carouselElement"><img src="image\bedside_table.jpg" alt="7">
+                </li>
+                <li class="carouselElement"><img src="image\kitchen_in_front.jpg" alt="8">
+                </li>
+                <li class="carouselElement"><img src="image\kitchen_on_the_side.jpg" alt="9">
+                </li>
+              </ul>
+          
         </article>
 
       </section>
@@ -227,6 +248,16 @@
       </footer>
     </div>
   </body>
+
+  <script>
+    var next = document.getElementById('next');
+      var previous = document.getElementById('previous');
+      next.onclick = function() {
+      document.getElementById('next').style.visibility = 'hidden';
+      };
+      </script>
+  
+
 </html>
 
 

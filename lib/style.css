@@ -1,14 +1,21 @@
 
 
-body, nav, aside, div, h1, section, article, p, form, button, img, h2, h3, blockquote, footer {
+
+@import url('http://fonts.cdnfonts.com/css/sf-ui-display');
+@import url('http://fonts.cdnfonts.com/css/new-york-extra-large');
+
+
+
+nav, aside, div, h1, section, article, p, form, button, img, h2, h3, blockquote, footer {
     display: flex;
 }
 
 body {
-  font-family: SF UI Display;
-  font-size: 16px;
-  height: 100%;
-  width: 100%;
+  font-family: 'New York Extra Large', sans-serif;
+  font-family: 'New York Large', sans-serif;
+  font-family: 'New York Medium', sans-serif;
+  font-family: 'New York Small', sans-serif;
+  font-family: 'SF UI Display', sans-serif;
 
 }
 .base {

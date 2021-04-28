@@ -12,29 +12,37 @@
 
       <!-- Меню навигации -->
       <nav>
-        <div class="navigationLeft">
+        <div class="header">
           <aside class="logo">
             <div class="logoDiv">
               <img class="logoArch" src="image\Arch.svg">
               <img class="logoMove" src="image\move.svg">
             </div>
           </aside>
-          <aside class="menu">
-            <input type="checkbox" name="menu" class="menuInput" id="menuInput" />
-            <label for="menuInput">Меню</label> 
-            <ul class="navigationMenu">
-              <li><a href="" class="menuHowItWorks">How it Works</a></li>
-              <li><a href="" class="menuArticles">Articles</a></li>
-              <li><a href="" class="menuListOfArchitect">List of Architect</a></li>
-              <li><a href="" class="menuDesignGallery">Design Gallery</a></li>
-          </ul>
+          <aside class="container header__container">
+            <div class="menu-burger__header">
+              <span></span>
+            </div>
+            <!-- <input type="checkbox" name="menu" class="menuInput" id="menuInput" />
+            <label for="menuInput">Меню</label>  -->
+            <div class="header__nav">
+              <div class="menu header__menu">
+                <span class="span menuSpanHowItWorks"><a href="" class="menuDesignGallery">Design Gallery</a></span>
+                <span class="span"><a href="" class="menuListOfArchitect">List of Architect</a></span>
+                <span class="span"><a href="" class="menuArticles">Articles</a></span>
+                <span class="span"><a href="" class="menuHowItWorks">How it Works</a></span>
+                <span class="span spanIconSearhc"><img src="icons\iconSearhc.svg" class="iconSearhc" /></span>
+                <span class="span spanButtonSignIn"><button class="buttonSignIn">Sign In</button></span>
+                <span class="span spanButtonSignUp"><button class="buttonSignUp">Sign Up</button></span>
+              </div>
+            </div>
             <!-- <a href="" class="menuHowItWorks">How it Works</a>
             <a href="" class="menuArticles">Articles</a>
             <a href="" class="menuListOfArchitect">List of Architect</a>
             <a href="" class="menuDesignGallery">Design Gallery</a> -->
           </aside>
         </div>
-        <div class="navigationRight">
+        <!-- <div class="navigationRight">
           <aside class="searhc">
             <img src="icons\iconSearhc.svg" class="iconSearhc" />
           </aside>
@@ -46,7 +54,7 @@
           <aside class="signUp">
             <button class="buttonSignUp">Sign Up</button>
           </aside>
-        </div>
+        </div> -->
       </nav>
 
       <!-- Секция 1 -->
@@ -81,7 +89,7 @@
             <button class="buttonSection2Right" id="next"> <img src="icons\buttonSection2Right.svg" alt="Направо"></button> 
           </form>
         </div>
-        <article class="contentSection2">
+        <div id="flexiselDemo1" class="contentSection2">
               <ul class="carouselConteiner">
                 <li class="carouselElement"><img src="image\kitchen_in_front.jpg" alt="0">
                 </li>
@@ -104,8 +112,8 @@
                 <li class="carouselElement"><img src="image\kitchen_on_the_side.jpg" alt="9">
                 </li>
               </ul>
-          
-        </article>
+              <div class="clearout"></div>
+          </div>
 
       </section>
 
@@ -248,14 +256,10 @@
       </footer>
     </div>
   </body>
-
-  <script>
-    var next = document.getElementById('next');
-      var previous = document.getElementById('previous');
-      next.onclick = function() {
-      document.getElementById('next').style.visibility = 'hidden';
-      };
-      </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+  <script src="lib\script.js"></script>
 
 </html>
 

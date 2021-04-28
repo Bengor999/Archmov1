@@ -4,7 +4,9 @@
 @import url('http://fonts.cdnfonts.com/css/sf-ui-display');
 @import url('http://fonts.cdnfonts.com/css/new-york-extra-large');
 
-
+:root {
+  --color-red: #FD665E;
+}
 
 nav, aside, div, h1, section, article, p, form, button, img, h2, h3, blockquote, footer {
     display: flex;
@@ -145,7 +147,7 @@ width: 100%;
 border-radius: 4px;
 padding: 4px 24px;
 color: rgb(255, 255, 255);
-background-color: pink;
+background-color: var(--color-red);
 border: 0px;
 font-family: SF UI Display;
 font-size: 14px;
@@ -190,7 +192,7 @@ button {
   margin: 3% 11% 3% 11%; 
 }
 .wordHouse {
-  color: pink;
+  color: var(--color-red);
 }
 .contentSection1 {
   justify-content: space-between;
@@ -235,7 +237,7 @@ button.buttonSection1 {
   border-radius: 4px;
   padding: 8px 32px;
   color: rgb(255, 255, 255);
-  background-color: pink;
+  background-color: var(--color-red);
   border: 0px;
   font-family: SF UI Display;
   font-size: 14px;
@@ -514,7 +516,7 @@ h3 {
   width: 100%;
   border-radius: 4px;
   padding: 8px 32px;
-  background-color: pink;
+  background-color: var(--color-red);
   border: 0px;
   margin: 0% 0% 0% 0%;  
   font-family: SF UI Display;
@@ -717,7 +719,7 @@ font-weight: 700;
   text-align: left;
 }
 .wordArchmove {
-  color: pink;
+  color: var(--color-red);
 }
 .formButtonSection5 {
   margin: 13% 0 0 0;
@@ -731,7 +733,7 @@ font-weight: 700;
   border-radius: 4px;
   padding: 8 32;
   color: rgb(255, 255, 255);
-  background-color: pink;
+  background-color: var(--color-red);
   border: 0px;
   font-family: SF UI Display;
   font-size: 14px;
@@ -963,7 +965,7 @@ font-weight: 700;
     border-radius: 4px;
     padding: 4px 24px;
     color: rgb(255, 255, 255);
-    background-color: pink;
+    background-color: var(--color-red);
     border: 0px;
     font-family: SF UI Display;
     font-size: 14px;
@@ -985,13 +987,13 @@ font-weight: 700;
     display: flex;
     margin: 20% 0 0 -70%;
     /* vertical-align: top; */
-    background-color: pink;
+    background-color: var(--color-red);
   }
   input[type="checkbox"]:checked ~ label + ul {
     display: flex;
     margin: 280px 0 0 0;
     /* max-height: 100%; */
-    /* background-color: pink; */
+    /* background-color: var(--color-red); */
   }
   .menuHowItWorks, .menuArticles, .menuListOfArchitect, .menuDesignGallery {
     margin: 0 0 0 5%;

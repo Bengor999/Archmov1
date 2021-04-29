@@ -105,26 +105,21 @@ header {
   display: block;
   align-self: center;
   list-style: none;
-  margin: 10px 0px 10px 20px;
-  font-size: 20px;
+  margin: 0px 0px 0px 20px;
+  font-size: 14px;
   text-decoration: none;
   /* background-color: darkcyan; */
   white-space: nowrap;
 }
-.menuHowItWorks, .menuArticles, .menuListOfArchitect, .menuDesignGallery {
-  /* line-height: 40px;
-  letter-spacing: 0.01em;
-  text-align: center;
-  color: #000; */
-  /* background-color: darkslategray; */
-  /* text-decoration: none;
-  white-space: nowrap; */
-}
 .menuSpanHowItWorks {
-  margin: 0 0 0 70px;
+  margin: 0 30% 0 20px;
 } 
 .spanIconSearhc {
-  margin:  0 0 0 25%;
+  position: absolute;
+  font-size: 20px;
+  top: 22px;
+  right: 290px;
+  margin:  0 0 0 0;
 }
 
 .iconSearhc {
@@ -149,15 +144,6 @@ text-align: center;
 }
 button {
   white-space: nowrap;
-}
-#iconSearhcLi {
-  margin: 0 0 0 20%;
-}
-#buttonSignInLi {
-  margin: 0 0 0 0%;
-}
-#buttonSignUpLi {
-  margin: 0  0 0 0%;
 }
 .buttonSignIn {
   background-color: rgb(255, 255, 255);
@@ -261,7 +247,7 @@ button.buttonSection1 {
 .section2 {
   display: block;
   flex-direction: column;
-  max-width: 1440px;
+  max-width: 9440px;
   width: 100%;
   max-height: 720px;
   height: 100%;
@@ -269,11 +255,12 @@ button.buttonSection1 {
   /* background-color: rgb(158, 45, 45); */
 }
 .Section2HeaderButton {
-  justify-content: flex-end;
+  justify-content: center;
   max-width: 1110px;
   width: 100%;
   max-height: 120px;
   height: 100%;
+  margin: 0 0 0 11%;
   
   /* background-color: aqua; */
   margin: 0% 11% 3% 11%; 
@@ -292,7 +279,7 @@ button.buttonSection1 {
   letter-spacing: -0.04em;
   text-align: left;
   /* background-color: rgb(21, 68, 68); */
-  margin: 0 12% 0 0; 
+  margin: 0 12% 0 22%; 
 }
 .buttonSection2 {
   justify-content: flex-end;
@@ -326,37 +313,16 @@ button.buttonSection1 {
   width: 100%;
   color:rgb(0, 0, 0, 1);
 }
-.contentSection2 {
-  /* display: inline; */
-  /* max-height: 432px; */
-  /* max-width: 1275px; */
-  /* height: 100%; */
-  /* width: 2000px; */
-  margin: 0% 0% 0% 0%;  
-  background-color: seagreen;
-}
-.carouselConteiner {
-  display: block;
-  /* width: 100%; */
-  /* width: 2000px; */
-  /* list-style: none; */
 
-  /* max-width: 1275px; */
-  /* overflow: hidden; */
-}
-.carouselElement{
-  display: block;
-  /* width: 510px; */
-  /* height: 625px; */
-  list-style: none;
-  /* background-color: plum; */
-}
-.carouselElement img{
-  display: block;
-  width: 510px;
-  height: 625px;
-  background-color: rgb(97, 117, 180);
-}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -423,10 +389,8 @@ button.buttonSection1 {
 .iconProtection {
   justify-self: center;
   position: relative;
-  max-height: 55px;
-  max-width: 48px;
-  height: 100%;
-  width: 100%;
+  height: 55px;
+  width: 48px;
   margin: 0% 0% 0 0;
   /* background-color: tomato; */
 }
@@ -440,10 +404,8 @@ button.buttonSection1 {
 .iconRectangle {
   justify-content: center;
   position: relative;
-  max-height: 48px;
-  max-width: 48px;
-  height: 100%;
-  width: 100%;
+  height: 48px;
+  width: 48px;
   margin: 0% 0% 0 0;
 }
 /* .iconStake img, .iconRectangle img {
@@ -461,10 +423,8 @@ button.buttonSection1 {
 .iconStake {
   justify-content: center;
   position: relative;
-  max-height: 53px;
-  max-width: 48px;
-  height: 100%;
-  width: 100%;
+  height: 53px;
+  width: 48px;
   margin: 0% 0% 0 0%;
   /* background-color: violet; */
 }
@@ -955,132 +915,6 @@ font-weight: 700;
 
 
 
-.clearout {
-  height:20px;
-  clear:both;
-  }
-.base {
-  display: block;
-}
-  .section2 {
-    display: block;
-  }
-
-  .carouselConteiner {
-    display: 'inline-block';
-  }
-
-  .carouselElement {
-    display: 'inline-block';
-  }
-
-  .carouselElement img {
-    display:'inline-block';
-  }
-
-
-  /* #flexiselDemo2 {
-  display:none;
-  } */
-  
-  .nbs-flexisel-container {
-      position:relative;
-      max-width:100%;
-  }
-  .nbs-flexisel-ul {
-      position:relative;
-      width:99999px;
-      margin:0px;
-      padding:0px;
-      /* list-style-type:none;    */
-      text-align:center;  
-      overflow: auto;
-  }
-  
-  .nbs-flexisel-inner {
-      position: relative;
-      overflow: hidden;
-      float:left;
-      width:100%;
-      background:#fcfcfc;
-      background: #fcfcfc -moz-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* FF3.6+ */
-      background: #fcfcfc -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#eee)); /* Chrome,Safari4+ */
-      background: #fcfcfc -webkit-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Chrome10+,Safari5.1+ */
-      background: #fcfcfc -o-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Opera11.10+ */
-      background: #fcfcfc -ms-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* IE10+ */
-      background: #fcfcfc linear-gradient(top, #fcfcfc 0%, #eee 100%); /* W3C */
-      border:1px solid #ccc;
-      border-radius:5px;
-      -moz-border-radius:5px;
-      -webkit-border-radius:5px;  
-  }
-  
-  .nbs-flexisel-item {
-      float:left;
-      margin:0px;
-      padding:0px;
-      cursor:pointer;
-      position:relative;
-      line-height:0px;
-  }
-  .nbs-flexisel-item img {
-      max-width: 100%;
-      cursor: pointer;
-      position: relative;
-      margin-top: 10px;
-      margin-bottom: 10px;
-  }
-  
-  /*** Navigation ***/
-  
-  .nbs-flexisel-nav-left,
-  .nbs-flexisel-nav-right {
-      padding:5px 10px;
-      border-radius:15px;
-      -moz-border-radius:15px;
-      -webkit-border-radius:15px;      
-      position: absolute;
-      cursor: pointer;
-      z-index: 4;
-      top: 50%;
-      transform: translateY(-50%);   
-      background: rgba(0,0,0,0.5);
-      color: #fff;     
-  }
-  
-  .nbs-flexisel-nav-left {
-      left: 10px;
-  }
-  
-  .nbs-flexisel-nav-left:before {
-      content: "<"
-  }
-  
-  .nbs-flexisel-nav-left.disabled {
-      opacity: 0.4;
-  }
-  
-  .nbs-flexisel-nav-right {
-      right: 5px;    
-  }
-  
-  .nbs-flexisel-nav-right:before {
-      content: ">"
-  }
-  
-  .nbs-flexisel-nav-right.disabled {
-      opacity: 0.4;
-  }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1180,7 +1014,8 @@ font-weight: 700;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 100%;
+    margin: 0 0 0 0;
+    width: 120%;
     height: 400px;
     background-color:rgb(255, 162, 162);
   }
@@ -1191,17 +1026,32 @@ font-weight: 700;
       align-self:flex-start;
       /* background-color: darkred; */
   }
+  .spanIconSearhc {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    margin:  0 0 0 0;
+  }
   .spanButtonSignUp {
     display: block;
     position: absolute;
-    top: 10px;
-    left: 500px;
-    right: 200px;
+    top: 90px;
+    /* left: 500px; */
+    right: 20px;
   }
-  .header__nav.open-menu {
+  .spanButtonSignIn {
     display: block;
+    position: absolute;
+    top: 180px;
+    /* left: 500px; */
+    right: 20px;
+  }
+
+  .header__nav.open-menu {
+    display: flex;
+    width: 100%;
     background-color: rgb(255, 162, 162);
-    min-width: 1249px;
+    /* min-width: 1249px; */
 
   }
 

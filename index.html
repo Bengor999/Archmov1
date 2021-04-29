@@ -4,7 +4,14 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="lib/style.css" type="text/css">
+    <link rel="stylesheet" href="lib/chiefslider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib\search.css">
+    <link rel="stylesheet" href="lib\simple-adaptive-slider.css">
+
     <title>Archmove</title>
+
+
   </head>
 
   <body>
@@ -27,11 +34,16 @@
             <label for="menuInput">Меню</label>  -->
             <div class="header__nav">
               <div class="menu header__menu">
-                <span class="span menuSpanHowItWorks"><a href="" class="menuDesignGallery">Design Gallery</a></span>
+                <span class="span menuSpanDesignGallery"><a href="" class="menuDesignGallery">Design Gallery</a></span>
                 <span class="span"><a href="" class="menuListOfArchitect">List of Architect</a></span>
                 <span class="span"><a href="" class="menuArticles">Articles</a></span>
-                <span class="span"><a href="" class="menuHowItWorks">How it Works</a></span>
-                <span class="span spanIconSearhc"><img src="icons\iconSearhc.svg" class="iconSearhc" /></span>
+                <span class="span menuSpanHowItWorks" ><a href="" class="menuHowItWorks">How it Works</a></span>
+                <span class="span spanIconSearhc">
+                  <form action="" class="formSearch">
+                    <input type="search" class="inputSearch">
+                    <i class="fa fa-search"></i>
+                  </form>
+                </span>
                 <span class="span spanButtonSignIn"><button class="buttonSignIn">Sign In</button></span>
                 <span class="span spanButtonSignUp"><button class="buttonSignUp">Sign Up</button></span>
               </div>
@@ -84,36 +96,48 @@
           <h2 class="headerSection2">Build professional
             <br />valuable room for you
           </h2>
-          <form class="buttonSection2" onsubmit="return false">
+          <!-- <form class="buttonSection2" onsubmit="return false">
             <button class="buttonSection2Left" id="previous"> <img src="icons\buttonSection2Left.svg" alt="Налево"></button> 
             <button class="buttonSection2Right" id="next"> <img src="icons\buttonSection2Right.svg" alt="Направо"></button> 
-          </form>
+          </form> -->
         </div>
-        <div id="flexiselDemo1" class="contentSection2">
-              <ul class="carouselConteiner">
-                <li class="carouselElement"><img src="image\kitchen_in_front.jpg" alt="0">
-                </li>
-                <li class="carouselElement"><img src="image\kitchen_on_the_side.jpg" alt="1">
-                </li>
-                <li class="carouselElement"><img src="image\bedroom.jpg" alt="2">
-                </li>
-                <li class="carouselElement"><img src="image\bedside_table.jpg" alt="3">
-                </li>
-                <li class="carouselElement"><img src="image\kitchen_in_front.jpg" alt="4">
-                </li>
-                <li class="carouselElement"><img src="image\kitchen_on_the_side.jpg" alt="5">
-                </li>
-                <li class="carouselElement"><img src="image\bedroom.jpg" alt="6">
-                </li>
-                <li class="carouselElement"><img src="image\bedside_table.jpg" alt="7">
-                </li>
-                <li class="carouselElement"><img src="image\kitchen_in_front.jpg" alt="8">
-                </li>
-                <li class="carouselElement"><img src="image\kitchen_on_the_side.jpg" alt="9">
-                </li>
-              </ul>
-              <div class="clearout"></div>
+        <div class="container">
+
+          <div class="slider" data-slider="chiefslider">
+            <div class="slider__container">
+              <div class="slider__wrapper">
+                <div class="slider__items">
+                  <div class="slider__item">
+                    <div class="slider__item-container">
+                      <div class="slider__item-content"><img src="image\kitchen_in_front.jpg" alt="0"></div>
+                    </div>
+                  </div>
+                  <div class="slider__item">
+                    <div class="slider__item-container">
+                      <div class="slider__item-content"><img src="image\kitchen_on_the_side.jpg" alt="1"></div>
+                    </div>
+                  </div>
+                  <div class="slider__item">
+                    <div class="slider__item-container">
+                      <div class="slider__item-content"><img src="image\bedroom.jpg" alt="2"></div>
+                    </div>
+                  </div>
+                  <div class="slider__item">
+                    <div class="slider__item-container">
+                      <div class="slider__item-content"><img src="image\bedside_table.jpg" alt="3"></div>
+                    </div>
+                  </div>
+                  <div class="slider__item">
+                    <div class="slider__item-container">
+                      <div class="slider__item-content"><img src="image\kitchen_in_front.jpg" alt="4"></div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <a href="#" class="slider__control" data-slide="prev"></a>
+            <a href="#" class="slider__control" data-slide="next"></a>
           </div>
+        </div>
 
       </section>
 
@@ -183,18 +207,28 @@
             <img src="image\“.png" alt="Кавычки красные"  />
           </div>
           <div class="contentSection4Right">
-            <blockquote class="contentSection4Right1">We just wanted to thank you for this fantastic website! We are so grateful for being able to advertise our Petite cabin and receive feedback from people from all over the U.S. and even further.
-            </blockquote>
-            <div class="contentSection4Right2">
-              <p> <strong>Adam Morph </strong><i> </i>&nbsp — CEO Alfatech</p>
-              <form class="buttonSection4">
-                <button class="buttonSection2Left">
-                  <img src="icons\buttonSection2Left.svg" alt="Налево" />
-                </button>
-                <button class="buttonSection2Right">
-                  <img src="icons\buttonSection2Right.svg" alt="Направо" />
-                </button>
-              </form>
+            <div class="slider2">
+                  <div class="item">
+                    <span>
+                    <blockquote class="contentSection4Right1">We just wanted to thank you for this fantastic website! We are so grateful for being able to advertise our Petite cabin and receive feedback from people from all over the U.S. and even further.
+                    </blockquote>
+                    <div class="contentSection4Right2">
+                      <p> <strong>Adam Morph </strong><i> </i>&nbsp — CEO Alfatech</p>
+                    </div>
+                    </span>
+                  </div>
+                  <div class="item">
+                    <span>
+                    <blockquote class="contentSection4Right1" style="color:rgb(39, 59, 167);">We just wanted to thank you for this fantastic website! We are so grateful for being able to advertise our Petite cabin and receive feedback from people from all over the U.S. and even further.
+                    </blockquote>
+                    <div class="contentSection4Right2">
+                      <p> <strong>Adam Morph </strong><i> </i>&nbsp — CEO Alfatech</p>
+                    </div>
+                  </span>
+              </div>
+              <!-- Стрелки для перехода к предыдущему и следующему слайду -->
+              <a class="prev" onclick="minusSlide()"><img src="icons\buttonSection2Left.svg" /></a>
+              <a class="next" onclick="plusSlide()"><img src="icons\buttonSection2Right.svg" /></a>
             </div>        
           </div>
         </article>
@@ -257,9 +291,19 @@
     </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-  <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+  <script src="lib\chiefslider.js"></script>
+  <!-- Подключаем JS слайдера -->
+  <script defer src="lib\simple-adaptive-slider.js"></script>
   <script src="lib\script.js"></script>
+  <script>
+    const $slider = document.querySelector('[data-slider="chiefslider"]');
+  new ChiefSlider($slider, {
+    loop: false // без зацикливания
+  });
+    
+  
+  </script>
+
 
 </html>
 

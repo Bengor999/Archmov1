@@ -2,16 +2,11 @@
 
 <html>
   <head>
+
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="lib/style.css" type="text/css">
-    <link rel="stylesheet" href="lib/chiefslider.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="lib\search.css">
-    <link rel="stylesheet" href="lib\simple-adaptive-slider.css">
-
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Archmove</title>
-
-
+    <!-- JS подключен снизу -->
   </head>
 
   <body>
@@ -26,12 +21,10 @@
               <img class="logoMove" src="image\move.svg">
             </div>
           </aside>
-          <aside class="container header__container">
+          <aside class="containerNav header__container">
             <div class="menu-burger__header">
               <span></span>
             </div>
-            <!-- <input type="checkbox" name="menu" class="menuInput" id="menuInput" />
-            <label for="menuInput">Меню</label>  -->
             <div class="header__nav">
               <div class="menu header__menu">
                 <span class="span menuSpanDesignGallery"><a href="" class="menuDesignGallery">Design Gallery</a></span>
@@ -48,25 +41,8 @@
                 <span class="span spanButtonSignUp"><button class="buttonSignUp">Sign Up</button></span>
               </div>
             </div>
-            <!-- <a href="" class="menuHowItWorks">How it Works</a>
-            <a href="" class="menuArticles">Articles</a>
-            <a href="" class="menuListOfArchitect">List of Architect</a>
-            <a href="" class="menuDesignGallery">Design Gallery</a> -->
           </aside>
         </div>
-        <!-- <div class="navigationRight">
-          <aside class="searhc">
-            <img src="icons\iconSearhc.svg" class="iconSearhc" />
-          </aside>
-
-          <aside class="signIn">
-            <button class="buttonSignIn">Sign In</button>
-          </aside>
-
-          <aside class="signUp">
-            <button class="buttonSignUp">Sign Up</button>
-          </aside>
-        </div> -->
       </nav>
 
       <!-- Секция 1 -->
@@ -96,10 +72,6 @@
           <h2 class="headerSection2">Build professional
             <br />valuable room for you
           </h2>
-          <!-- <form class="buttonSection2" onsubmit="return false">
-            <button class="buttonSection2Left" id="previous"> <img src="icons\buttonSection2Left.svg" alt="Налево"></button> 
-            <button class="buttonSection2Right" id="next"> <img src="icons\buttonSection2Right.svg" alt="Направо"></button> 
-          </form> -->
         </div>
         <div class="container">
 
@@ -201,7 +173,6 @@
         <h2 class="headerSection4">Sound Too Good
           <br />To Be True?
         </h2>
-        
         <article class="contentSection4">
           <div class="imageSection4">
             <img src="image\“.png" alt="Кавычки красные"  />
@@ -279,7 +250,6 @@
             <a href="" class="ContactUs">Contact Us</a>
             <a href="" class="PrivacyPolicy">Privacy Policy</a>
           </aside>
-
           <aside class="footerLogo">
             <div class="footerLogoDiv">
               <img class="logoArch" src="image\Arch.svg">
@@ -290,19 +260,15 @@
       </footer>
     </div>
   </body>
+
+  <!-- jquery для бургер меню -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="lib\chiefslider.js"></script>
-  <!-- Подключаем JS слайдера -->
-  <script defer src="lib\simple-adaptive-slider.js"></script>
-  <script src="lib\script.js"></script>
-  <script>
-    const $slider = document.querySelector('[data-slider="chiefslider"]');
-  new ChiefSlider($slider, {
-    loop: false // без зацикливания
-  });
-    
-  
-  </script>
+  <!-- js первого слайдера -->
+  <script src="JS\chiefslider.js"></script>
+  <!-- Подключаем JS второго слайдера -->
+  <script defer src="JS\simple-adaptive-slider.js"></script>
+  <!-- Общий js -->
+  <script src="script.js"></script>
 
 
 </html>

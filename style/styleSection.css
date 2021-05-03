@@ -1,0 +1,737 @@
+  :root {
+        --color-red: #FD665E;
+  }
+  
+  nav, div, aside, h1, section, article, p, form, button, h2, h3, blockquote, footer {
+      display: flex;
+  }
+  
+  body {
+    font-family: 'New York Extra Large', sans-serif;
+    font-family: 'SF UI Display', sans-serif;
+  
+  }
+  
+  .base {
+    margin:0 auto;
+    flex-direction: column;
+    max-width: 1440px;
+    height: 100%;
+    width: 100%;
+  }
+
+
+  /*Стили меню навигации*/
+
+
+  nav {
+    display: block;
+    max-width: 1440px;
+    height: 96px;
+    height: 100%;
+    width: 100%;
+  }
+  .menu-burger__header {
+    display: none;
+  }
+  aside.logo {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 100%;
+    width: 64px;
+    margin: 0 20px 0 20px;
+  }
+  div.logoDiv {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 64px;
+  }
+  a {
+    text-decoration: none;
+    color: #585858;
+  }
+  /* header {
+    max-width: 1440px;
+    width: 100%;
+    height:100%;
+    display: block;
+    align-items: center;
+  } */
+  .containerNav{
+    display: block;
+    max-width: 1370px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .header__nav {
+    max-width: 1370px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .header__menu {
+    max-width: 1370px;
+    width: 100%;
+    display: flex;
+    height: 96px;
+    position: relative;
+    justify-content: flex-start;
+  }
+  .span {
+    display: block;
+    align-self: center;
+    list-style: none;
+    margin: 0px 0px 0px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .menuSpanHowItWorks {
+    margin: 0 30% 0 20px;
+  } 
+  .spanIconSearhc {
+    position: absolute;
+    font-size: 20px;
+    top: 22px;
+    right: 290px;
+    margin:  0 0 0 0;
+  }
+  .spanButtonSignIn {
+    position: absolute;
+    font-size: 20px;
+    top: 22px;
+    right: 145px;
+    margin:  0 0 0 0;
+  }
+  .spanButtonSignUp {
+    position: absolute;
+    font-size: 20px;
+    top: 22px;
+    right: 10px;
+    margin:  0 0 0 0;
+  }
+
+  .iconSearhc {
+    width: 14.06px;
+    height: 14.06px;
+  }
+  .buttonSignIn, .buttonSignUp {
+  height: 48px;
+  width: 99px;
+  border-radius: 4px;
+  padding: 4px 24px;
+  color: rgb(255, 255, 255);
+  background-color: var(--color-red);
+  border: 0px;
+  font-family: SF UI Display;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  }
+  button {
+    white-space: nowrap;
+  }
+  
+
+  /*Стили первой секции*/
+
+
+  .section1 {
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+  }
+  .headerSection1 {
+    display: block;
+    max-width: 870px;
+    width: 100%;
+    height: 100%;
+    font-size: 112px;
+    font-family: New York Extra Large;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin: 3% 11% 3% 11%; 
+  }
+  .wordHouse {
+    color: var(--color-red);
+  }
+  .contentSection1 {
+    justify-content: space-between;
+    max-width: 1110px;
+    width: 100%;
+    height: 100%;
+    margin: 0% 11% 0% 11%;
+  }
+  .contentSection1Left {
+    flex-direction: column;
+    max-width: 345px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  }
+  p.contentSection1 {
+    max-width: 290px;
+    width: 100%;
+    height: 100%;
+    margin: 0% 3% 20% 0%;
+    font-family: SF UI Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  button.buttonSection1 {
+    max-height: 56px;
+    max-width: 179px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px 32px;
+    color: rgb(255, 255, 255);
+    background-color: var(--color-red);
+    border: 0px;
+    font-family: SF UI Display;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  .section1 img {
+    max-width: 70%;
+    padding: 0 0 0 0 ;
+    height: auto;
+  }
+  
+  
+  /*Стили второй секции*/
+  
+
+  .section2 {
+    display: block;
+    flex-direction: column;
+    max-width: 9440px;
+    width: 100%;
+    height: 100%;
+    margin: 5% 0 0 0;
+  }
+  .Section2HeaderButton {
+    justify-content: center;
+    max-width: 1110px;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 11%;
+    margin: 0% 11% 3% 11%; 
+  }
+  .headerSection2 {
+    display: block;
+    max-width: 535px;
+    height: 100%;
+    width: 100%;
+    font-family: New York Extra Large;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin: 0 12% 0 22%; 
+  }
+    
+  
+  /*Стили третей секции*/
+
+  
+  .section3 {
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 5% 0 0 0;
+  }
+  .headerSection3 {
+    display: block;
+    max-width: 459px;
+    height: 100%;
+    width: 100%;
+    font-family: New York Extra Large;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin: 0 0 0 11%; 
+  }
+  .contentSection3 {
+    justify-content: space-between;
+    max-width: 1110px;
+    height: 100%;
+    width: 100%;
+    margin: 5% 0 0 11%; 
+  }
+  .imageSection3 {
+    max-width: 60%;
+    padding: 0 0 0 0 ;
+    height: auto;
+  }
+  .contentSection3Right {
+    flex-direction: column;
+    max-width: 535px;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  .contentSection3Right1, .contentSection3Right2, .contentSection3Right3, .contentSection3Right4 {
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 372px;
+    height: 100%;
+    width: 100%;
+    margin: 7% 0 0 11%;
+  }
+  .iconProtection {
+    justify-self: center;
+    position: relative;
+    height: 55px;
+    width: 48px;
+    margin: 0% 0% 0 0;
+  }
+  .iconJackdaw {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+  }
+  .iconRectangle {
+    justify-content: center;
+    position: relative;
+    height: 48px;
+    width: 48px;
+    margin: 0% 0% 0 0;
+  }
+  .iconDollar {
+    position: absolute;
+    left:65%;
+    top:70%;
+    transform:translate(-50%,-50%);
+  }
+  .iconStake {
+    justify-content: center;
+    position: relative;
+    height: 53px;
+    width: 48px;
+    margin: 0% 0% 0 0%;
+  }
+  .iconEllipse {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+  }
+  section.contentSection3RightText {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 305px;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 2%;
+  }
+  h3 {
+    max-width: 305px;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 0;
+    font-family: SF UI Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  .contentSection3RightText article {
+    max-width: 305px;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 0;
+    font-family: SF UI Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  .formButtonSection3 {
+    margin: 0% 42% 0% 20%;
+  }
+  .buttonSection3 {
+    max-width: 204px;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    padding: 8px 32px;
+    background-color: var(--color-red);
+    border: 0px;
+    margin: 0% 0% 0% 0%;  
+    font-family: SF UI Display;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  
+  
+  /*Стили четвертой секции*/
+  
+
+  .section4 {
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+  }
+  .headerSection4 {
+    display: block;
+    max-width: 374px;
+    height: 100%;
+    width: 100%;
+    font-family: New York Extra Large;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin: 3% 0 0 11%; 
+  }
+  .contentSection4 {
+    justify-content: space-between;
+    max-width: 1110px;
+    height: 100%;
+    width: 100%;
+    margin: 3% 0 0 11%; 
+  }
+  .imageSection4 {
+    justify-content: flex-end;
+    align-items: flex-start;
+    max-width: 20%;
+    width: 100%;
+  }
+  .imageSection4 img {
+    max-width: 20%;
+    padding: 0 0 0 0 ;
+    height: auto;
+  }
+  .contentSection4Right {
+    flex-direction: column;
+    max-width: 80%;
+    width: 100%;
+    margin: 0 0 0 0%;
+  }
+  .contentSection4Right1 {
+    max-width: 765px;
+    width: 100%;
+    height: 75%;
+    margin: 0 0;
+    font-family: SF UI Display;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 51px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  .contentSection4Right2 {
+    justify-content: space-between;
+    max-width: 765px;
+    width: 100%;
+    height: 100%;
+    margin: 5% 0 0 0;
+  }
+  .contentSection4Right2 p {
+    font-family: SF UI Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  .contentSection4Right2 p strong {
+    font-weight: 700;
+  }
+  
+  
+  /*Стили Пятой секции*/
+  
+
+  .section5 {
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+  }
+  .contentSection5Left {
+    align-self: flex-end;
+    position: relative;
+    max-width: 446px;
+    height: 100%;
+    width: 35%;
+    margin: 5% 0 0 11%; 
+  }
+  .contentSection5Left img {
+    height: auto;
+    width: 100%;
+    margin: 0 0;
+  }
+  .bigCloud {
+    max-width: 201px;
+    height: auto;
+    width: 100%;
+    margin: 0 0;
+    position: absolute;
+    left:6%;
+    top:21%;
+    transform:translate(-50%,-50%);
+  }
+  .smallCloud {
+    max-width: 130px;
+    height: auto;
+    width: 100%;
+    margin: 0 0;
+    position: absolute;
+    left:91%;
+    top:40%;
+    transform:translate(-50%,-50%);
+  }
+  .contentSection5Right {
+    flex-direction: column;
+    max-width: 521px;
+    height: 100%;
+    width: 100%;
+    margin: 0% 10% 0 9%; 
+  }
+  .contentSection5Right h2 {
+    display: block;
+    max-width: 521px;
+    height: 100%;
+    width: 100%;
+    margin: 57% 0 0 0; 
+    font-family: New York Extra Large;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.04em;
+    text-align: left;
+  }
+  .wordArchmove {
+    color: var(--color-red);
+  }
+  .formButtonSection5 {
+    margin: 13% 0 0 0;
+  }
+  .buttonSection5 {
+    justify-content: center;
+    max-width: 204px;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    padding: 8 32;
+    color: rgb(255, 255, 255);
+    background-color: var(--color-red);
+    border: 0px;
+    font-family: SF UI Display;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  
+
+  /*Наши партнеры*/
+  
+
+  .ourPartners {
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+  }
+  .ourPartners h2 {
+    display: block;
+    max-width: 374px;
+    height: 100%;
+    width: 100%;
+    font-family: New York Extra Large;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin: 3% 0 0 11%; 
+  }
+  .ourPartnersContent {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    height: 100%;
+    width: 100%;
+    margin: 2% 0 0 11%; 
+  }
+  .logoAIA {
+    max-height: 57px;
+    max-width: 161px;
+    height: auto;
+    width: 14.5%;
+    opacity: 30%;
+  }
+  .logoCFMA {
+    max-height: 139px;
+    max-width: 140px;
+    height: auto;
+    width: 12.6%;
+    opacity: 30%;
+  }
+  .logoASLA {
+    max-height: 57px;
+    max-width: 210px;
+    height: auto;
+    width: 18.9%;
+    opacity: 30%;
+  }
+  .logoSTIR {
+    max-height: 62px;
+    max-width: 94px;
+    height: auto;
+    width: 8.5%;
+    opacity: 30%;
+  }
+  .logoMA {
+    max-height: 121px;
+    max-width: 213px;
+    height: auto;
+    width: 19.2%;
+    opacity: 30%;
+  }
+  /* Чёрно-белые лого */
+  .logoAIA, .logoCFMA, .logoASLA, .logoSTIR, .logoMA {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  /* Возвращаем цвет лого при наведении мыши */
+  .logoAIA:hover, .logoCFMA:hover, .logoASLA:hover, .logoSTIR:hover, .logoMA:hover {
+    opacity:1;
+    -webkit-filter: none;
+    filter: none;
+  }
+
+
+  /*Стили меню Footer*/
+
+
+  .footer {
+    flex-direction: column;
+    max-width: 1440px;
+    height: 100%;
+    width: 100%;
+  }
+  .hr-line {
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 1px solid #f0f0f0;
+  }
+  .footerBorder {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 11%;
+  }
+  .footerMenu {
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+  .footerLogo {
+    justify-content: flex-end;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+  }
+  .footerLogoDiv {
+    flex-direction: column;
+    max-width: 64px;
+    width: 100%;
+  }
+  .logoArch {
+    align-self: flex-start;
+    max-width: 45.74px;
+  }
+  .logoMove {
+    align-self: flex-end;
+    max-width: 50.86px;
+  }
+  .footerMenu a {
+    color: #000;
+    font-family: SF UI Display;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .AboutUs {
+    margin: 0 4% 0 0;
+  }
+  .HowItWorks, .FAQ, .ContactUs, .PrivacyPolicy {
+    margin: 0 4% 0 4%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

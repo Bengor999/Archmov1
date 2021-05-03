@@ -1,0 +1,19 @@
+
+
+/* Шрифты */
+@import "style/stylesheetNYExtraLarge.css";
+@import "style/stylesheetSFUIDisplay.css";
+/* Стили первого слайдера */
+@import 'style/chiefslider.css';
+/* Стили меню поиска */
+@import 'style/search.css';
+@import url(https://use.fontawesome.com/releases/v5.3.1/css/all.css);
+/* Стили второго слайдера */
+@import 'style/simple-adaptive-slider.css';
+/* Общие стили документа */
+@import 'style/styleSection.css';
+/* Стили для разрешения меньше 1249 */
+@import 'style/style1249Adaptiv.css';
+/* Стили для разрешения меньше 767 */
+@import 'style/style767Adaptiv.css';
+

@@ -1,0 +1,30 @@
+
+
+
+
+
+
+@media (max-width: 767px) {
+  .section1 img {
+    display: none;
+  }
+  .contentSection1Left {
+    max-width: 740px;
+  }
+  p.contentSection1 {
+    max-width: 740px;
+  }
+  .base h1{
+    font-size: 78px;
+    line-height: 78px;
+
+  }
+  .base h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+
+
+}
+
